@@ -15,16 +15,16 @@ spec:
     spec:
       containers:
       - name: mission-deployment
-        image: sahil/mission:latest
+        image: sahilbonami/mission:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
             memory: "128Mi"
+            cpu: "300m"
+          limits:
+            memory: "256Mi"
             cpu: "500m"
 ---
 apiVersion: v1
